@@ -28,20 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.meses = new System.Windows.Forms.ComboBox();
+            this.cbMeses = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // meses
+            // cbMeses
             // 
-            this.meses.FormattingEnabled = true;
-            this.meses.Location = new System.Drawing.Point(115, 56);
-            this.meses.Name = "meses";
-            this.meses.Size = new System.Drawing.Size(121, 21);
-            this.meses.TabIndex = 0;
+            this.cbMeses.FormattingEnabled = true;
+            this.cbMeses.Items.AddRange(new object[] {
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Dezembro"});
+            this.cbMeses.Location = new System.Drawing.Point(115, 56);
+            this.cbMeses.Name = "cbMeses";
+            this.cbMeses.Size = new System.Drawing.Size(121, 21);
+            this.cbMeses.TabIndex = 0;
             // 
             // label1
             // 
@@ -86,7 +99,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.meses);
+            this.Controls.Add(this.cbMeses);
             this.Name = "Form1";
             this.Text = "switchCase";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -97,7 +110,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox meses;
+        private System.Windows.Forms.ComboBox cbMeses;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
